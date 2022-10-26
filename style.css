@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template: 65px 1fr 75px 50px / 250px 3fr;
+    gap: 1rem;
+    background-color: lightpink;
+    min-height: 100vh;
+    padding: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+header, aside, article, img, footer {
+    border: 0;
+    padding: 1rem;
+}
+
+header, footer {
+    grid-column: span 3;
+    background-color: cyan;
+    text-align: center;
+}
+
+aside {
+    background-color: darkcyan;
+    grid-row: span 4;
+    padding-top: 105%;
+    padding-left: 35%;
+}
+
+article {
+    display: flex;
+    grid-column: span 2;
+    grid-row: span 4;
+    background-color: indianred;
+    flex-direction: column;
+    justify-content: end;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1rem;
+}
+
+.image1, .image2, .image3 {
+    background-color: lightgray;
+    height: 200px;
+    width: 200px;
+    padding-top: 75px;
+    padding-left: 25px;
+}
+
